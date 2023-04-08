@@ -1,5 +1,6 @@
 # TalkBotGPT
 
+Please click [here](README_CN.md) for the Chinese readme.
 
 TalkBotGPT is a conversational chatbot project based on ChatGPT. It utilizes OpenAI's GPT-3.5 model as its core engine, providing advanced natural language processing capabilities to users. TalkBotGPT can be extended to various scenarios, including online customer service, intelligent assistants, social chat, and language generation, etc.
 
