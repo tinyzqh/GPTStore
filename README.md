@@ -19,6 +19,7 @@ To get started with TalkBotGPT, follow these steps:
 
 1. Clone this repository to your local machine.
 2. Install the required dependencies as mentioned in the documentation.
+3. replace the `api_key` in `src/config.py` with your own api_key.
 3. Run the demo or use the provided examples to interact with TalkBotGPT.
 4. Customize TalkBotGPT as per your requirements and integrate it into your project.
 
