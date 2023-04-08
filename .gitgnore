@@ -1,0 +1,6 @@
+.idea
+.vscode/
+*.csv
+*.log
+_*/
+.DS_Store
