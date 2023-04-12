@@ -1,3 +1,4 @@
+import os
 import platform
 
 client_config = {
@@ -10,5 +11,10 @@ client_config = {
 class model_config:
     if platform.system().lower() == "windows":
         text2vec_model_path = r"C:\Users\tinyzqh\.cache\torch\sentence_transformers\shibing624_text2vec-base-chinese"
+        if not os.path.exists(text2vec_model_path):
+            text2vec_model_path = "shibing624/text2vec-base-chinese"
     else:
         raise Exception("Unknown system type!")
+
+class method_config:
+    use_semantic_search = False

@@ -27,6 +27,14 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt
 
 3. replace the `api_key` in `src/config.py` with your own api_key.
 3. Run the demo or use the provided examples to interact with TalkBotGPT.
+
+```bash
+python unit_test/prompts_test.py  # Step 1: test generate prompts
+python unit_test/client_test.py  # Step 2: test client
+python unit_test/test_audios.py  # Step 3: test audio
+python local_ui_session.py  # Step 4: test local ui session
+```
+
 4. Customize TalkBotGPT as per your requirements and integrate it into your project.
 
 For detailed usage instructions and examples, please refer to the [documentation](https://github.com/tinyzqh/TalkBotGPT/wiki).

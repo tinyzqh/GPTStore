@@ -31,7 +31,7 @@ class PromptProcess(BasePromptProcess):
 
         # 2. knowledge
         query = msg_list[-1]
-        knowledges = self.search(query)
+        knowledges = self.search(query) if self.use_semantic_search else ""
         part_facts = read_text_file(self.facts_describe_path) + "".join(knowledges)
 
         user_info = {"role": "user", "content": part_facts}
