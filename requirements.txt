@@ -6,3 +6,8 @@ requests==2.26.0
 pyttsx3==2.90
 SpeechRecognition==3.10.0
 PyAudio==0.2.13
+pandas==2.0.0
+torch==2.0.0
+sentence_transformers==2.2.2
+gradio==3.25.0
+llama_index==0.5.12

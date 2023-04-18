@@ -2,7 +2,7 @@ import os
 from typing import Any, List, Dict
 from src.configs.configs import model_config
 from sentence_transformers import SentenceTransformer
-from src.configs.configs import model_config
+from src.configs.configs import model_config, method_config
 from src.utils.vector_utils import generate_knowledge_index
 
 
@@ -44,11 +44,13 @@ class BasePromptProcess:
         self.facts_describe_path: str = f"{self.role_path}/facts_describe.txt"
         self.assistant_file_path: str = f"{self.role_path}/assistant.txt"
         self.index_path = f"{self.role_path}/knowledge_embeddings.csv"
-
-        self.text2vec_model = SentenceTransformer(model_config.text2vec_model_path, device="cpu")
-        self.search_num = search_num
-
-        generate_knowledge_index(self.text2vec_model, self.knowledges_path)
+        
+        self.use_semantic_search = method_config.use_semantic_search
+        if self.use_semantic_search:
+            self.text2vec_model = SentenceTransformer(model_config.text2vec_model_path, device="cpu")
+            generate_knowledge_index(self.text2vec_model, self.knowledges_path)
+            self.search_num = search_num
+        
 
     def generate_model_prompt(self, session_id: str, msg_list: List[str], actor_id: str) -> List[Dict[str, Any]]:
         """
