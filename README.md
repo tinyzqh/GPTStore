@@ -1,6 +1,6 @@
-# TalkBotGPT
+# TalkGptStore
 
-TalkBotGPT 是一个基于 ChatGPT 的对话式个人助手项目。它利用了 OpenAI 的 GPT-3.5 模型作为核心引擎，为用户提供先进的自然语言处理能力。TalkBotGPT 可以应用于多种场景，包括在线雅思对话老师、雅思写作润色老师、翻译软件、社交聊天等。
+TalkGptStore 是一个基于 ChatGPT 的对话式个人助手项目。它利用了 OpenAI 的 GPT-3.5 模型作为核心引擎，为用户提供先进的自然语言处理能力。TalkGptStore 可以应用于多种场景，包括在线雅思对话老师、雅思写作润色老师、翻译软件、社交聊天等。
 
 仅修改不到30行代码即可构建自己的个人助手，如论文阅读助手，面试考官助手，周报总结助手，文字游戏休闲助手，吃饭推荐助手，安慰女朋友话术助手等等。
 
@@ -15,35 +15,35 @@ TalkBotGPT 是一个基于 ChatGPT 的对话式个人助手项目。它利用了
 
 ## Interface Display
 
-TalkBotGPT 是一个功能强大的对话式聊天机器人项目，为开发者和用户提供丰富的对话生成能力，帮助他们构建智能、灵活、可定制的对话应用。无论是用于商业应用还是个人项目，TalkBotGPT 都可以为用户带来便利和创新。以下是一些基础功能，开发者可以基于此进行快速的二次开发。
+TalkGptStore 是一个功能强大的对话式聊天机器人项目，为开发者和用户提供丰富的对话生成能力，帮助他们构建智能、灵活、可定制的对话应用。无论是用于商业应用还是个人项目，TalkGptStore 都可以为用户带来便利和创新。以下是一些基础功能，开发者可以基于此进行快速的二次开发。
 
 ### 原始GPT
 
 <div align="center">
-<img src="https://github.com/tinyzqh/TalkBotGPT/blob/main/pic/gpt.jpeg" width="800" >
+<img src="https://github.com/tinyzqh/TalkGptStore/blob/main/pic/gpt.jpeg" width="800" >
 </div>
 
 ### 翻译
 
 <div align="center">
-<img src="https://github.com/tinyzqh/TalkBotGPT/blob/main/pic/translate.jpeg" width="800" >
+<img src="https://github.com/tinyzqh/TalkGptStore/blob/main/pic/translate.jpeg" width="800" >
 </div>
 
 ### 雅思对话老师
 
 <div align="center">
-<img src="https://github.com/tinyzqh/TalkBotGPT/blob/main/pic/ielts_dialogue.jpeg" width="800" >
+<img src="https://github.com/tinyzqh/TalkGptStore/blob/main/pic/ielts_dialogue.jpeg" width="800" >
 </div>
 
 ### 雅思写作修改老师
 
 <div align="center">
-<img src="https://github.com/tinyzqh/TalkBotGPT/blob/main/pic/ielts_write.jpeg" width="800" >
+<img src="https://github.com/tinyzqh/TalkGptStore/blob/main/pic/ielts_write.jpeg" width="800" >
 </div>
 
 ## Getting Started
 
-要开始使用 TalkBotGPT，请按照以下步骤操作:
+要开始使用 TalkGptStore，请按照以下步骤操作:
 
 1. 将本仓库克隆到您的本地机器。
 2. 按照文档中的说明安装所需的依赖项。
@@ -61,7 +61,7 @@ export PYTHONPATH=.  # set PYTHONPATH
 python src/local_ui_session.py  # test local ui session
 ```
 
-4. 根据您的需求定制 TalkBotGPT，并将其集成到您的项目中。
+4. 根据您的需求定制 TalkGptStore，并将其集成到您的项目中。
 
 有关详细的使用说明和示例，请参阅[文档](https://github.com/tinyzqh/TalkBotGPT/wiki).
 
