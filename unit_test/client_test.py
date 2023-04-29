@@ -8,8 +8,8 @@ def client_test() -> None:
     This function is responsible for testing the GPTClient class.
     """
     client = GPTClient(**client_config)
-    prompt_instance = PromptProcess("ielts")
-    prompt = prompt_instance.generate_model_prompt(session_id="0", msg_list=["可以简要介绍一下你自己吗？"], actor_id="0")
+    prompt_instance = PromptProcess("gpt")
+    prompt = prompt_instance.generate_model_prompt(msg="可以介绍一下自己吗", chat_history=[])
     result, err = client.send_and_recv(msg=prompt, temp=0.9, out_num=1)
     print(result)
 

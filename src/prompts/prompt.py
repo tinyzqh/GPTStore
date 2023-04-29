@@ -10,19 +10,18 @@ class PromptProcess(BasePromptProcess):
     def __init__(self, role_name: str, search_num: int = 2) -> None:
         super().__init__(role_name, search_num)
 
-    def generate_model_prompt(self, session_id: str, msg_list: List[str], actor_id: str) -> List[Dict[str, Any]]:
+    def generate_model_prompt(self, msg: str, chat_history: List[str]) -> List[Dict[str, Any]]:
         """
         This function is used to generate the prompt for the model.
         
         Args:
-            session_id (str): Session ID.
-            msg_list (List[str]): List of messages.
-            actor_id (str): Actor ID.
+            msg (str): str of messages.
+            chat_history (List[str]): List of chat history.
 
         Returns:
             List[Dict[str, Any]]: List of prompts.
         """
-        assert isinstance(msg_list, list), "msg_list must be a list."
+        assert isinstance(msg, str), "msg must be str."
         prompt = []
 
         # 1. system-background
@@ -30,18 +29,26 @@ class PromptProcess(BasePromptProcess):
         prompt.append(system_info)
 
         # 2. knowledge
-        query = msg_list[-1]
+        query = msg
         knowledges = self.search(query) if self.use_semantic_search else ""
         part_facts = read_text_file(self.facts_describe_path) + "".join(knowledges)
+        
+        
 
         user_info = {"role": "user", "content": part_facts}
         prompt.append(user_info)
+        
 
         # query
         prompt.append({"role": "user", "content": read_text_file(self.user_file_path) + "Q:" + query + "\nA:"})
 
         # 3. assistant
-        prompt.append({"role": "assistant", "content": read_text_file(self.assistant_file_path) + "\nA:"})
+        if len(chat_history) > 0:
+            history = "The conversation was recorded as: " + ";".join([f"human: {chat[0]}; bot: {chat[1]}" for chat in chat_history])
+        else:
+            history = ""
+            
+        prompt.append({"role": "assistant", "content": history + "\n" + read_text_file(self.assistant_file_path) + "\nA:"})
         return prompt
 
     def search(self, query: str) -> List[str]:
