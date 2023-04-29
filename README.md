@@ -20,7 +20,7 @@ TalkGptStore 是一个功能强大的对话式聊天机器人项目，为开发�
 ### 原始GPT
 
 <div align="center">
-<img src="https://github.com/tinyzqh/TalkBotGPT/blob/main/pic/gpt.jpeg" width="800" >
+<img src="https://github.com/tinyzqh/TalkGptStore/blob/main/pic/gpt.jpeg" width="800" >
 </div>
 
 ### 翻译
