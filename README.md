@@ -4,6 +4,8 @@ TalkGptStore 是一个基于 ChatGPT 的对话式个人助手项目。它利用�
 
 仅修改不到30行代码即可构建自己的个人助手，如论文阅读助手，面试考官助手，周报总结助手，文字游戏休闲助手，吃饭推荐助手，安慰女朋友话术助手等等。
 
+- [BiliBili视频教程](https://www.bilibili.com/video/BV1go4y1t7jB/?spm_id_from=333.999.0.0&vd_source=d8ab7686ea514acb6635faa5d2227d61)
+
 ## Features
 
 - 轻量级: 界面采用gradio搭建，轻量级，易于使用。
