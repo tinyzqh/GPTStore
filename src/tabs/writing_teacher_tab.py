@@ -7,7 +7,7 @@ from src.configs.configs import client_config
 
 
 client = GPTClient(**client_config)
-prompt_instance = PromptProcess("ielts_write")
+prompt_obj = PromptProcess("ielts_write")
 
 input_letter = []
 respond_letter = []
@@ -16,10 +16,12 @@ respond_letter = []
 def respond(message, chat_history):
     if len(chat_history) == 0:
         chat_history.append((input_letter[0], respond_letter[0]))
-    prompt = prompt_instance.generate_model_prompt(msg=message, chat_history=chat_history[-5:])
+    prompt = prompt_obj.generate_model_prompt(
+        msg=message, chat_history=chat_history[-5:]
+    )
     result, err = client.send_and_recv(msg=prompt, temp=0.9, out_num=1)
-    bot_message = result[0]
-    chat_history.append((message, bot_message))
+    bot_msg = result[0]
+    chat_history.append((message, bot_msg))
     return "", chat_history
 
 
@@ -28,11 +30,11 @@ def submit_respond(message):
     respond_letter.clear()
 
     input_letter.append(message)
-    prompt = prompt_instance.generate_model_prompt(msg=message, chat_history=[])
+    prompt = prompt_obj.generate_model_prompt(msg=message, chat_history=[])
     result, err = client.send_and_recv(msg=prompt, temp=0.9, out_num=1)
-    bot_message = result[0]
-    respond_letter.append(bot_message)
-    return bot_message
+    bot_msg = result[0]
+    respond_letter.append(bot_msg)
+    return bot_msg
 
 
 def WritingTeacherTab():
@@ -54,7 +56,9 @@ def WritingTeacherTab():
                     ],
                     inputs=[input_letter],
                 )
-                btn.click(fn=submit_respond, inputs=[input_letter], outputs=output_letter)
+                btn.click(
+                    fn=submit_respond, inputs=[input_letter], outputs=output_letter
+                )
 
             with gr.Column():
                 chatbot = gr.Chatbot(label="ChatGPT")

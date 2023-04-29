@@ -5,10 +5,12 @@ import requests
 class BingSearch(object):
     def __init__(self) -> None:
         self.session = requests.Session()
-        # 正则提取摘要和链接
+        # # Regular expressions to extract title, brief, and link
         self.title_pattern = re.compile("<a.target=..blank..target..(.*?)</a>")
         self.brief_pattern = re.compile("K=.SERP(.*?)</p>")
-        self.link_pattern = re.compile("(?<=(a.target=._blank..target=._blank..href=.))(.*?)(?=(..h=))")
+        self.link_pattern = re.compile(
+            "(?<=(a.target=._blank..target=._blank..href=.))(.*?)(?=(..h=))"
+        )
 
         self.headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36 Edg/94.0.992.31"
@@ -20,8 +22,21 @@ class BingSearch(object):
         self.chunk_count = 1
 
     def find(self, search_query):
+        """
+        Searches Bing for the given query and returns a list of dictionaries
+        containing the title and content for each search result.
+
+        Args:
+            search_query (str): The search query.
+
+        Returns:
+            List[Dict[str, str]]: A list of dictionaries, where each dictionary
+            contains a 'title' and 'content' field for a search result.
+        """
         url = "https://cn.bing.com/search?q={}".format(search_query)
-        res = self.session.get(url, headers=self.headers, proxies=self.proxies, timeout=2)
+        res = self.session.get(
+            url, headers=self.headers, proxies=self.proxies, timeout=2
+        )
         r = res.text
 
         title = self.title_pattern.findall(r)
@@ -42,7 +57,10 @@ class BingSearch(object):
             tmp2 = re.sub("<[^<]+?>", "", tmp).replace("\n", "").strip()
             clear_title.append(tmp2)
         res = [
-            {"title": "[" + clear_title[i] + "](" + link[i][1] + ")", "content": clear_brief[i]}
+            {
+                "title": "[" + clear_title[i] + "](" + link[i][1] + ")",
+                "content": clear_brief[i],
+            }
             for i in range(min(self.chunk_count, len(brief)))
         ]
         return res
