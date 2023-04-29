@@ -19,19 +19,27 @@ TalkGptStore 是一个功能强大的对话式聊天机器人项目，为开发�
 
 ### 原始GPT
 
-![Image text](https://github.com/tinyzqh/TalkGptStore/blob/main/pic/gpt.jpeg)
+<div align="center">
+<img src="https://github.com/tinyzqh/TalkBotGPT/blob/main/pic/gpt.jpeg" width="800" >
+</div>
 
 ### 翻译
 
-![Image text](https://github.com/tinyzqh/TalkGptStore/blob/main/pic/translate.jpeg)
+<div align="center">
+<img src="https://github.com/tinyzqh/TalkBotGPT/blob/main/pic/translate.jpeg" width="800" >
+</div>
 
 ### 雅思对话老师
 
-![Image text](https://github.com/tinyzqh/TalkGptStore/blob/main/pic/ielts_dialogue.jpeg)
+<div align="center">
+<img src="https://github.com/tinyzqh/TalkBotGPT/blob/main/pic/ielts_dialogue.jpeg" width="800" >
+</div>
 
 ### 雅思写作修改老师
 
-![Image text](https://github.com/tinyzqh/TalkGptStore/blob/main/pic/ielts_write.jpeg)
+<div align="center">
+<img src="https://github.com/tinyzqh/TalkBotGPT/blob/main/pic/ielts_write.jpeg" width="800" >
+</div>
 
 ## Getting Started
 
