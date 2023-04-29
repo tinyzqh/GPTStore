@@ -8,10 +8,11 @@ TalkBotGPT 是一个基于 ChatGPT 的对话式个人助手项目。它利用了
 
 ## Features
 
+- 轻量级: 界面采用gradio搭建，轻量级，易于使用。
 - 支持自定义智能体：轻松构建自己工作中常用的工具，只需要改一点Prompt即可。
 - 支持语义检索本地文档：轻松构建自己的本地知识库。
-- 支持语音输入：轻松构建自己的语音输入工具。
 - 支持在线检索：基于bing搜索引擎的搜索结果，给到GPT做后续处理。
+- 支持语音输入：轻松构建自己的语音输入工具，相关文件在unit_test/test_audio.py。
 - 灵活的接口：TalkBotGPT 提供简单易用的接口，可以与其他应用或服务无缝集成，实现对话功能的可扩展性和定制性。
 
 ## Getting Started
@@ -50,3 +51,7 @@ TalkBotGPT 是一款开源软件，根据[MIT License](LICENSE)进行许可。�
 
 
 TalkBotGPT 是一个功能强大的对话式聊天机器人项目，为开发者和用户提供丰富的对话生成能力，帮助他们构建智能、灵活、可定制的对话应用。无论是用于商业应用还是个人项目，TalkBotGPT 都可以为用户带来便利和创新。
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=tinyzqh/TalkBotGPT&type=Date)](https://star-history.com/#tinyzqh/TalkBotGPT&Date)
