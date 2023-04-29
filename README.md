@@ -89,7 +89,7 @@ python src/local_ui_session.py  # test local ui session
 [![Star History Chart](https://api.star-history.com/svg?repos=tinyzqh/TalkBotGPT&type=Date)](https://star-history.com/#tinyzqh/TalkBotGPT&Date)
 
 ## License
-TalkBotGPT 是一款开源软件，根据[MIT License](LICENSE)进行许可。请根据许可证的条款自由使用、修改和分发。
+TalkGptStore 是一款开源软件，根据[MIT License](LICENSE)进行许可。请根据许可证的条款自由使用、修改和分发。
 
 ## Contact Us
 
