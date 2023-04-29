@@ -5,7 +5,6 @@ flask-cors==3.0.10
 requests==2.26.0
 pyttsx3==2.90
 SpeechRecognition==3.10.0
-PyAudio==0.2.13
 pandas==2.0.0
 torch==2.0.0
 sentence_transformers==2.2.2

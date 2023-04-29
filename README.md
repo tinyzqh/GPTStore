@@ -11,7 +11,7 @@ TalkGptStore 是一个基于 ChatGPT 的对话式个人助手项目。它利用�
 - 支持语义检索本地文档：轻松构建自己的本地知识库。
 - 支持在线检索：基于bing搜索引擎的搜索结果，给到GPT做后续处理。
 - 支持语音输入：轻松构建自己的语音输入工具，相关文件在unit_test/test_audio.py。
-- 灵活的接口：TalkBotGPT 提供简单易用的接口，可以与其他应用或服务无缝集成，实现对话功能的可扩展性和定制性。
+- 灵活的接口：TalkGptStore 提供简单易用的接口，可以与其他应用或服务无缝集成，实现对话功能的可扩展性和定制性。
 
 ## Interface Display
 
@@ -63,7 +63,7 @@ python src/local_ui_session.py  # test local ui session
 
 4. 根据您的需求定制 TalkGptStore，并将其集成到您的项目中。
 
-有关详细的使用说明和示例，请参阅[文档](https://github.com/tinyzqh/TalkBotGPT/wiki).
+有关详细的使用说明和示例，请参阅[文档](https://github.com/tinyzqh/TalkGptStore/wiki).
 
 
 ## 如何添加自己的个人助手？
@@ -86,7 +86,7 @@ python src/local_ui_session.py  # test local ui session
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=tinyzqh/TalkBotGPT&type=Date)](https://star-history.com/#tinyzqh/TalkBotGPT&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=tinyzqh/TalkGptStore&type=Date)](https://star-history.com/#tinyzqh/TalkGptStore&Date)
 
 ## License
 TalkGptStore 是一款开源软件，根据[MIT License](LICENSE)进行许可。请根据许可证的条款自由使用、修改和分发。
