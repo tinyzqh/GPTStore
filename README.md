@@ -1,6 +1,6 @@
-# TalkGptStore
+# GPTStore
 
-TalkGptStore 是一个基于 ChatGPT 的对话式个人助手项目。它利用了 OpenAI 的 GPT-3.5 模型作为核心引擎，为用户提供先进的自然语言处理能力。TalkGptStore 可以应用于多种场景，包括在线雅思对话老师、雅思写作润色老师、翻译软件、社交聊天等。
+GPTStore 是一个基于 ChatGPT 的对话式个人助手项目。GPTStore 可以应用于多种场景，包括在线雅思对话老师、雅思写作润色老师、翻译软件、社交聊天等。
 
 仅修改不到30行代码即可构建自己的个人助手，如论文阅读助手，面试考官助手，周报总结助手，文字游戏休闲助手，吃饭推荐助手，安慰女朋友话术助手等等。
 
@@ -13,39 +13,39 @@ TalkGptStore 是一个基于 ChatGPT 的对话式个人助手项目。它利用�
 - 支持语义检索本地文档：轻松构建自己的本地知识库。
 - 支持在线检索：基于bing搜索引擎的搜索结果，给到GPT做后续处理。
 - 支持语音输入：轻松构建自己的语音输入工具，相关文件在unit_test/test_audio.py。
-- 灵活的接口：TalkGptStore 提供简单易用的接口，可以与其他应用或服务无缝集成，实现对话功能的可扩展性和定制性。
+- 灵活的接口：GPTStore 提供简单易用的接口，可以与其他应用或服务无缝集成，实现对话功能的可扩展性和定制性。
 
 ## Interface Display
 
-TalkGptStore 是一个功能强大的对话式聊天机器人项目，为开发者和用户提供丰富的对话生成能力，帮助他们构建智能、灵活、可定制的对话应用。无论是用于商业应用还是个人项目，TalkGptStore 都可以为用户带来便利和创新。以下是一些基础功能，开发者可以基于此进行快速的二次开发。
+GPTStore 是一个功能强大的对话式个人助手工具，为开发者和用户提供丰富的对话生成能力，帮助他们构建智能、灵活、可定制的对话应用。以下是一些基础功能，开发者可以基于此进行快速的二次开发。
 
 ### 原始GPT
 
 <div align="center">
-<img src="https://github.com/tinyzqh/TalkGptStore/blob/main/pic/gpt.jpeg" width="800" >
+<img src="https://github.com/tinyzqh/GPTStore/blob/main/pic/gpt.jpeg" width="800" >
 </div>
 
 ### 翻译
 
 <div align="center">
-<img src="https://github.com/tinyzqh/TalkGptStore/blob/main/pic/translate.jpeg" width="800" >
+<img src="https://github.com/tinyzqh/GPTStore/blob/main/pic/translate.jpeg" width="800" >
 </div>
 
 ### 雅思对话老师
 
 <div align="center">
-<img src="https://github.com/tinyzqh/TalkGptStore/blob/main/pic/ielts_dialogue.jpeg" width="800" >
+<img src="https://github.com/tinyzqh/GPTStore/blob/main/pic/ielts_dialogue.jpeg" width="800" >
 </div>
 
 ### 雅思写作修改老师
 
 <div align="center">
-<img src="https://github.com/tinyzqh/TalkGptStore/blob/main/pic/ielts_write.jpeg" width="800" >
+<img src="https://github.com/tinyzqh/GPTStore/blob/main/pic/ielts_write.jpeg" width="800" >
 </div>
 
 ## Getting Started
 
-要开始使用 TalkGptStore，请按照以下步骤操作:
+要开始使用 GPTStore，请按照以下步骤操作:
 
 1. 将本仓库克隆到您的本地机器。
 2. 按照文档中的说明安装所需的依赖项。
@@ -55,7 +55,7 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt
 ```
 
 3. 在 src/config.py 中用您自己的 api_key 替换原有的 api_key。
-3. 运行演示程序或使用提供的示例与 TalkBotGPT 进行互动。
+3. 运行演示程序或使用提供的示例与 GPTStore 进行互动。
 
 ```bash
 cd TalkBotGPT
@@ -63,7 +63,7 @@ export PYTHONPATH=.  # set PYTHONPATH
 python src/local_ui_session.py  # test local ui session
 ```
 
-4. 根据您的需求定制 TalkGptStore，并将其集成到您的项目中。
+4. 根据您的需求定制 GPTStore，并将其集成到您的项目中。
 
 有关详细的使用说明和示例，请参阅[文档](https://github.com/tinyzqh/TalkGptStore/wiki).
 
@@ -83,15 +83,15 @@ python src/local_ui_session.py  # test local ui session
 
 
 ## Contributing
-我们欢迎社区的贡献！如果您想为 TalkBotGPT 做贡献，请查阅[贡献指南](CONTRIBUTING.md)以获取详细信息和开始的方法。
+我们欢迎社区的贡献！如果您想为 GPTStore 做贡献，请查阅[贡献指南](CONTRIBUTING.md)以获取详细信息和开始的方法。
 
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=tinyzqh/TalkGptStore&type=Date)](https://star-history.com/#tinyzqh/TalkGptStore&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=tinyzqh/GPTStore&type=Date)](https://star-history.com/#tinyzqh/GPTStore&Date)
 
 ## License
-TalkGptStore 是一款开源软件，根据[MIT License](LICENSE)进行许可。请根据许可证的条款自由使用、修改和分发。
+GPTStore 是一款开源软件，根据[MIT License](LICENSE)进行许可。请根据许可证的条款自由使用、修改和分发。
 
 ## Contact Us
 
